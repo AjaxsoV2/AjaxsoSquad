@@ -1,3 +1,10 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # wczytuje zmienne ze standardowego pliku .env
+
+token = os.getenv('DISCORD_TOKEN')
+
 import discord
 from discord.ext import commands
 import asyncio
@@ -150,4 +157,4 @@ async def stop(ctx):
     else:
         await ctx.send("Bot nie jest połączony z żadnym kanałem głosowym.")
 
-bot.run("MTM4NTIxMjM3ODcxNDQ3NjY4OQ.GnPc2e.cRMyAEbAxCuNOfSee_AhoOGAN1OQ6ecBUG3zd4")
+bot.run("token")
