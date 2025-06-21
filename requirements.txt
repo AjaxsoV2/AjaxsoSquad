@@ -25,3 +25,5 @@ urllib3==2.5.0
 wavelink==3.4.1
 yarl==1.20.1
 yt-dlp==2025.6.9
+python-dotenv
+discord.py
